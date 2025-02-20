@@ -1,8 +1,8 @@
+package MinhaPrimeiraED;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package minhaprimeiraed;
 
 /**
  *
@@ -25,7 +25,7 @@ public class MinhaPrimeiraED {
     }
 
     private boolean posicaoOcupada(int posicao) {
-        return posicao >= 0 && posicao < totalDeObjetos;
+        return posicao >= 0 && posicao < totalDeObjetos; //só posso colocar elemento entre a posição zero entre e o total de elementos
     }
 
     private boolean posicaoValida(int posicao) {
@@ -76,7 +76,7 @@ public class MinhaPrimeiraED {
             this.objetos[i] = this.objetos[i + 1];
         }
 
-        this.objetos[totalDeObjetos - 1] = null;
+        //this.objetos[totalDeObjetos - 1] = null; está 
         this.totalDeObjetos--;
     }
 
