@@ -24,6 +24,7 @@ const Agendamentos = sequelize.define('agendamentos', {
         type: Sequelize.STRING
 
     },
+ 
     telefone: {
         type: Sequelize.STRING
 
@@ -39,6 +40,7 @@ const Agendamentos = sequelize.define('agendamentos', {
     },
 })
 
-Agendamentos.sync();
-
+//criando tabela
+Agendamentos.sync({alter:true});
+//ao inves de usar o force: true, posso usar o alter para atualizar a tabela existente e o código fica dessa forma : Agendamentos.sync({alter: true});
 
