@@ -18,6 +18,6 @@ const Agendamentos = db.sequelize.define('agendamentos',{
     }
 }); //estamos acessando o modelo Agendamentos do banco de dados
 
-Agendamentos.sync({force:true})
+//Agendamentos.sync({force:true})
 
 module.exports = Agendamentos
